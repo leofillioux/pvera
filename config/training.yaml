@@ -1,0 +1,33 @@
+seeds: [0, 1, 2]
+save_dir: /path/to/vtab1k/trained_models
+results_dir: /path/to/vtab1k/results
+batch_size: 16
+num_workers: 2
+num_epochs: 500
+patience: 20
+relative_epsilon: 0.1
+optimizer:
+  name: AdamW
+  params:
+    lr: 0.0001
+    weight_decay: 0.0001
+beta:
+  caltech101: 1e16
+  cifar: 1e6
+  clevr_count: 1e6
+  clevr_dist: 1e8
+  diabetic_retinopathy: 1e6
+  dmlab: 1e16
+  dsprites_loc: 1e8
+  dsprites_ori: 1e10
+  dtd: 1e16
+  eurosat: 1e6
+  kitti: 1e12
+  oxford_flowers102: 1e8
+  oxford_iiit_pet: 1e12
+  patch_camelyon: 1e6
+  resisc45: 1e6
+  smallnorb_azi: 1e6
+  smallnorb_ele: 1e6
+  sun397: 1e12
+  svhn: 1e8

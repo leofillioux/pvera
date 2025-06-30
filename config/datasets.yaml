@@ -1,0 +1,22 @@
+data_dir: /path/to/vtab1k/datasets/
+img_size: [224, 224]
+num_classes:
+  caltech101: 102
+  cifar: 100
+  clevr_count: 8
+  clevr_dist: 6
+  diabetic_retinopathy: 5
+  dmlab: 6
+  dsprites_loc: 16
+  dsprites_ori: 16
+  dtd: 47
+  eurosat: 10
+  kitti: 4
+  oxford_flowers102: 102
+  oxford_iiit_pet: 37
+  patch_camelyon: 2
+  resisc45: 45
+  smallnorb_azi: 18
+  smallnorb_ele: 9
+  sun397: 397
+  svhn: 10
