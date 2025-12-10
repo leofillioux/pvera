@@ -5,6 +5,9 @@ This is the official implementation for PVeRA: Probabilistic Vector-Based Random
 
 Leo Fillioux, Enzo Ferrante, Paul-Henry Cournède, Maria Vakalopoulou, Stergios Christodoulidis
 
+> [!IMPORTANT]
+> **We are currently working on an integration into the PEFT library**
+
 ## Getting started
 1. Clone this repository.
 2. Download the VTAB-1k benchmark datasets (or a subset of these datasets). You can use [this repository](https://github.com/BenediktAlkin/vtab1k-pytorch/blob/main/SETUP_DATA.md) explains how to download the benchmark in the correct format.
