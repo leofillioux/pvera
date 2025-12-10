@@ -1,6 +1,10 @@
 # PVeRA: Probabilistic Vector-Based Random Matrix Adaptation
 This is the official implementation for PVeRA: Probabilistic Vector-Based Random Matrix Adaptation, which has been accepted for presentation at WACV 2026.
 
+[PVeRA: Probabilistic Vector-Based Random Matrix Adaptation](https://www.arxiv.org/abs/2512.07703)
+
+Leo Fillioux, Enzo Ferrante, Paul-Henry Cournède, Maria Vakalopoulou, Stergios Christodoulidis
+
 ## Getting started
 1. Clone this repository.
 2. Download the VTAB-1k benchmark datasets (or a subset of these datasets). You can use [this repository](https://github.com/BenediktAlkin/vtab1k-pytorch/blob/main/SETUP_DATA.md) explains how to download the benchmark in the correct format.
