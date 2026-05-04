@@ -6,7 +6,7 @@ This is the official implementation for PVeRA: Probabilistic Vector-Based Random
 Leo Fillioux, Enzo Ferrante, Paul-Henry Cournède, Maria Vakalopoulou, Stergios Christodoulidis
 
 > [!IMPORTANT]
-> **We are currently working on an integration into the PEFT library**
+> PVeRA is officially integrated in the PEFT library from HuggingFace, which you can find [here](https://huggingface.co/docs/peft/main/en/package_reference/pvera).
 
 ## Getting started
 1. Clone this repository.
