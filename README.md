@@ -5,8 +5,30 @@ This is the official implementation for PVeRA: Probabilistic Vector-Based Random
 
 Leo Fillioux, Enzo Ferrante, Paul-Henry Cournède, Maria Vakalopoulou, Stergios Christodoulidis
 
-> [!IMPORTANT]
-> PVeRA is officially integrated in the PEFT library from HuggingFace, which you can find [here](https://huggingface.co/docs/peft/main/en/package_reference/pvera).
+## Hugging Face implementation
+PVeRA is officially integrated in the `peft` library from Hugging Face, which you can find [here](https://huggingface.co/docs/peft/main/en/package_reference/pvera). Here is an example of adding a PVeRA adapter to a DINOv2 model.
+
+```python
+from transformers import AutoModel
+from peft import PveraConfig, get_peft_model
+
+base_model = AutoModel.from_pretrained("facebook/dinov2-base")
+config = PveraConfig(r=128, sample_at_inference=False)
+model = get_peft_model(base_model, config)
+```
+
+## Pretrained adapters
+The pretrained adapters are available using the Hugging Face environment, and can be found [here](https://huggingface.co/collections/leoflx/pvera). Here is an example for using the adapter for the Caltech101 dataset.
+
+```python
+from peft import PeftModel
+from transformers import AutoModelForImageClassification
+
+base = AutoModelForImageClassification.from_pretrained("facebook/dinov2-base", num_labels=102)
+model = PeftModel.from_pretrained(base, "leoflx/pvera_dinov2_b_caltech101")
+```
+
+**Important note**: this does not exactly reproduce the results from the original PVeRA paper (different implementation, average across multiple seed, ...).
 
 ## Getting started
 1. Clone this repository.
